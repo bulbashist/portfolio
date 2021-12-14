@@ -1,3 +1,123 @@
+@import "fonts";
+@import "variables";
+
+* {
+    margin: 0;
+}
+
 .page {
+    width: 1440px;
+    box-sizing: border-box;
     background-color: black;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    padding: 0 20px;
+
+    .header__logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .nav-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+        font: $std-font;
+        color: white;
+        list-style-type: none;
+
+        .nav-list__item {
+            cursor: pointer;
+
+            &:nth-child(6) {
+                font: normal 700 20px Inter;
+                cursor: default;
+
+                * {
+                    padding-left: 3px;
+                }
+
+                .lang-switch {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.hero {
+    position: relative;
+    height: 820px;
+    background-image: url("../assets/hero/bg.png");
+
+    .hero__info {
+        position: absolute;
+        top: 160px;
+        left: 60px;
+        width: 500px;
+        height: 330px;
+        padding: 0 20px;
+        color: white;
+
+        .hero__name {
+            font: normal 700 60px Merriweather;
+            margin-bottom: 10px;
+            line-height: 120px;
+        }
+
+        .hero__quote {
+            width: 470px;
+            margin-bottom: 25px;
+            font: $std-font;
+            line-height: 40px;
+        }
+
+        .hero__hire {
+            box-sizing: border-box;
+            width: 220px;
+            aspect-ratio: 4 / 1;
+            background-color: $gold;
+            font: $std-font;
+            color: black;
+            cursor: pointer;
+
+            &:hover {
+                color: white;
+            }
+        }
+    }
+}
+
+.skills {
+    height: 482px;
+}
+
+.portfolio {
+    height: 1500px;
+}
+
+.video {
+    height: 945px;
+}
+
+.price {
+    height: 845px;
+}
+
+.contacts {
+    height: 700px;
+    background-image: url("../assets/contacts/bg.png");
+    background-position: center center;
+}
+
+.footer {
+    height: 150px;
 }

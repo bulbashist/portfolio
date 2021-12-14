@@ -12,6 +12,10 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.html$/,
+                use: 'html-loader',
+            },
+            {
                 test: /\.s[ac]ss$/,
                 use: [
                     MiniCssExtractPlugin.loader,
@@ -22,7 +26,11 @@ module.exports = {
             {
                 test: /\.ts$/,
                 use: "ts-loader"
-            }
+            },
+            {
+            test: /\.(jpg|png|svg)$/,
+            type: 'asset/resource',
+            },
         ],
     },
     plugins: [
@@ -32,6 +40,6 @@ module.exports = {
         new MiniCssExtractPlugin(),
     ],
     devServer: {
-        port: 8080,
+        port: 9000,
     },
 }
