@@ -1,0 +1,16 @@
+@mixin button($bgColor, $textColor) {
+    box-sizing: border-box;
+    height: 55px;
+    aspect-ratio: 4 / 1;
+    border: 2px solid $gold;
+    background-color: $bgColor;
+    font: $std-font;
+    color: $textColor;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+
+    &:hover {
+        color: white;
+        transition: color 1s ease-in-out;
+    }
+}

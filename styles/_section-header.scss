@@ -1,0 +1,24 @@
+.section-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50%;
+    height: 80px;
+    margin: 0 auto;
+    padding: 100px 0 60px;
+
+    .section-header__line {
+        align-self: center;
+        width: 100%;
+        height: 2px;
+        background-color: $gold;    
+    }
+
+    .section-header__header {
+        align-self: center;
+        padding: 20px;
+        text-align: center;
+        font: $header-font;
+        color: $gold;
+    }
+}

@@ -6,7 +6,8 @@ module.exports = {
     entry: './src/app.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js'
+        filename: 'bundle.js',
+        assetModuleFilename: 'images/[hash][ext][query]',
     },
     mode: 'development',
     module: {
@@ -22,10 +23,6 @@ module.exports = {
                     "css-loader",
                     "sass-loader"
                 ]
-            },
-            {
-                test: /\.ts$/,
-                use: "ts-loader"
             },
             {
             test: /\.(jpg|png|svg)$/,
