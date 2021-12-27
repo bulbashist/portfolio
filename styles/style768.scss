@@ -3,6 +3,9 @@
 @import "mixins";
 @import "section-header";
 
+@media screen and (max-width: 900px) {
+    
+
 
 * {
     margin: 0;
@@ -10,4 +13,365 @@
     padding: 0;
     color: white;
     text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.page {
+    max-width: 768px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    padding: 0 20px;
+    background-image: url("../assets/hero/bg.png");
+    background-position: center 0;
+    background-repeat: no-repeat;
+
+    .header__logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .nav-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+        font: $std-font;
+        color: white;
+        list-style-type: none;
+
+        .nav-list__item {
+            cursor: pointer;
+
+            &:nth-child(6) {
+                font: normal 700 20px Inter;
+                cursor: default;
+
+                * {
+                    padding-left: 3px;
+                }
+
+                .lang-switch {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.hero {
+    height: 500px;
+    position: relative;
+    
+    background-image: url("../assets/hero/bg.png");
+    background-position: center -90px;
+    background-repeat: no-repeat;
+
+    .hero__info {
+        position: absolute;
+        top: 60px;
+        width: 500px;
+        height: 330px;
+        padding: 0 20px;
+        color: white;
+
+        .hero__name {
+            font: normal 400 32px / 2 Merriweather;
+            margin-bottom: 10px;
+        }
+
+        .hero__quote {
+            width: 470px;
+            margin-bottom: 25px;
+            font: $std-font;
+        }
+
+        .hero__hire {
+            @include button($gold, black);
+        }
+    }
+}
+
+.skills {
+    height: 770px;
+    padding: 0 20px;
+
+    .skill-list {
+        display: grid;
+        grid: 1fr 1fr / 1fr 1fr;
+        gap: 40px 29px;
+        padding: 0 30px;
+        color: white;
+
+        .skill-list__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            width: 320px;
+            height: 240px;
+
+            .skill-list__img {
+                height: 50px;
+                margin-bottom: 30px;
+            }
+
+            .skill-list__header {
+                font: $std-font;
+            }
+
+            .skill-list__description {
+                padding: 0 20px;
+                font: normal 400 18px / 2 Inter;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.portfolio {
+    height: 3870px;
+    padding: 0 20px;
+
+    .portfolio-panel {
+        display: grid;
+        grid: 1fr 1fr / 1fr 1fr;
+        justify-items: center;
+        gap: 5px;
+        width: 445px;
+        margin: 0 auto 60px;
+
+        .portfolio-panel__item {
+            list-style-type: none;
+
+            .portfolio-panel__btn {
+                @include button(black, $gold);
+            }
+        }
+    }
+
+    .portfolio-photos {
+        display: grid;
+        grid: 1fr 1fr 1fr 1fr 1fr 1fr / 1fr;
+        justify-items: center;
+        gap: 25px;      
+
+        .portfolio-photos__img {
+            aspect-ratio: 45 / 56;
+        }
+    }
+}
+
+.video {
+    height: 606px;
+    padding: 0 20px;
+
+    .video-wrapper {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 728 / 396;
+        font-size: 7.5px;
+
+        .video-wrapper__img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .video-wrapper__play-btn {
+            position: absolute;
+            left: calc(50% - 5em);
+            top: calc(50% - 5em);
+            width: 10em;
+            height: 10em;
+        }
+    }
+
+}
+
+.price {
+    height: 1914px;
+    padding: 0 20px;
+
+    .price-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 50px;
+
+        .price-list__item {
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            height: 505px;
+            aspect-ratio: 84 / 101;
+            border: 3px solid $gold;
+            padding: 40px 0;
+            color: white;
+            list-style-type: none;
+
+            .price-list__header {
+                margin-bottom: 20px;
+                font: normal 700 28px / 2 Merriweather;
+                text-align: center;
+            }
+
+            .price-list__price {
+                margin-bottom: 20px;
+                text-align: center;
+                font: normal 700 24px / 2 Merriweather;
+                color: $gold;
+            }
+
+            .services-list {
+                margin-bottom: 40px;
+
+                .services-list__item {
+                    text-align: center;
+                    font: normal 400 18px / 2 Inter;
+                    list-style-type: none;
+                }
+
+            }
+
+            .price-list__submit {
+                @include button($gold, black);
+                align-self: center;
+                
+            }
+        }
+    }
+
+}
+
+.contacts {
+    position: relative;
+    height: 600px;
+    background-image: url("../assets/contacts/bg.png");
+    background-position: center center;
+    background-size: cover;
+
+    .contacts-form {
+        position: absolute;
+        top: 60px;
+        left: calc(50% - 225px);
+        display: flex;
+        flex-direction: column;
+        width: 450px;
+        margin: 0 auto;
+
+        .contacts-form__header {
+            margin-bottom: 40px;
+            text-align: center;
+            font: $header-font-768;
+            color: $gold;
+        }
+
+        .contacts-form__email {
+            box-sizing: border-box;
+            height: 50px;
+            margin-bottom: 20px;
+            border: 2px solid $gold;
+            padding-left: 18px;
+            font: $std-font;
+            background-color: rgba($color: #000000, $alpha: 0.5);
+            color: $gold;
+
+            &::placeholder {
+                padding-top: 7px;
+                font: $std-font;
+                color: $gold;
+            }
+        }
+
+        .contacts-form__tel {
+            box-sizing: border-box;
+            height: 50px;
+            margin-bottom: 20px;
+            border: 2px solid $gold;
+            padding-left: 18px;
+            font: $std-font;
+            background-color: rgba($color: #000000, $alpha: 0.5);
+            color: $gold;
+
+            &::placeholder {
+                padding-top: 7px;
+                font: $std-font;
+                color: $gold;
+            }
+        }
+
+        .contacts-form__message {
+            box-sizing: border-box;
+            height: 100px;
+            margin-bottom: 30px;
+            border: 2px solid $gold;
+            padding: 3px 0 0 18px;
+            font: $std-font;
+            background-color: rgba($color: #000000, $alpha: 0.5);
+            color: $gold;
+
+            &::placeholder {
+                font: $std-font;
+                color: $gold;
+            }
+        }
+
+        .contacts-form__button {
+            @include button($gold, black);
+            align-self: center;
+        }
+
+    }
+
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    height: 190px;
+    padding: 20px 0;
+    color: white;
+
+    .footer-github {
+
+        .footer-github__text {
+            margin-right: 20px;
+            font: normal 400 16px Inter;
+            line-height: 50px;
+        }
+    }
+
+    .footer__rsschool {
+        font: $std-font;
+        line-height: 50px;
+    }
+
+    .footer-links-list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+        height: 50px;
+
+        .footer-links-list__item {
+            list-style-type: none;
+        }
+    }
+}
 }

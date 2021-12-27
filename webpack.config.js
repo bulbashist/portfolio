@@ -21,7 +21,7 @@ module.exports = {
                 use: [
                     MiniCssExtractPlugin.loader,
                     "css-loader",
-                    "sass-loader"
+                    "sass-loader",
                 ]
             },
             {
@@ -38,5 +38,6 @@ module.exports = {
     ],
     devServer: {
         port: 9000,
+        open: true,
     },
 }

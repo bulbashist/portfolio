@@ -1,2 +1,6 @@
 import '../styles/style.scss';
-import '../assets/header/camera.svg';
+import Portfolio from './setPortfolio';
+
+const portfolio = new Portfolio();
+
+portfolio.addListeners();
