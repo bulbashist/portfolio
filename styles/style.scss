@@ -22,6 +22,7 @@ html {
 
 .page {
     max-width: 1440px;
+    margin: 0 auto;
     box-sizing: border-box;
     background-color: black;
 }
@@ -159,6 +160,10 @@ html {
             .portfolio-panel__btn {
                 @include button(black, $gold);
             }
+
+            &:last-child .portfolio-panel__btn {
+                @include button($gold, black);
+            }
         }
     }
 
@@ -194,6 +199,7 @@ html {
             top: calc(50% - 5em);
             width: 10em;
             height: 10em;
+            cursor: pointer;
         }
     }
 
