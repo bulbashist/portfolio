@@ -116,12 +116,13 @@ html {
 }
 
 .skills {
-    height: 482px;
     padding: 0 20px;
 
     .skill-list {
         display: grid;
-        grid: 1fr / 1fr 1fr 1fr 1fr;
+        grid: 1fr / repeat(auto-fit, 320px);
+        grid-auto-flow: row;
+        justify-content: center;
         gap: 40px;
         color: white;
 
@@ -130,7 +131,6 @@ html {
             flex-direction: column;
             align-items: center;
             gap: 20px;
-            width: 320px;
             height: 240px;
 
             .skill-list__img {
@@ -152,7 +152,6 @@ html {
 }
 
 .portfolio {
-    height: 1500px;
     padding: 0 20px;
 
     .portfolio-panel {
@@ -178,8 +177,9 @@ html {
 
     .portfolio-photos {
         display: grid;
-        grid: 1fr 1fr / 1fr 1fr 1fr;
-        gap: 25px;      
+        grid: 1fr 1fr / repeat(auto-fit, 450px);
+        justify-content: center;
+        gap: 25px;
 
         .portfolio-photos__img {
             aspect-ratio: 45 / 56;
@@ -225,6 +225,8 @@ html {
         gap: 25px;
 
         .price-list__item {
+            display: flex;
+            flex-direction: column;
             box-sizing: border-box;
             width: 100%;
             aspect-ratio: 90 / 101;
@@ -259,7 +261,7 @@ html {
 
             .price-list__submit {
                 @include button($gold, black);
-                margin: 0 25%;
+                align-self: center;
             }
         }
     }
