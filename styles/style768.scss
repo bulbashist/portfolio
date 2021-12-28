@@ -60,7 +60,7 @@ html {
         .nav-list__item {
             cursor: pointer;
 
-            &:nth-child(6) {
+            &:last-child {
                 font: normal 700 20px Inter;
                 cursor: default;
 
@@ -71,6 +71,11 @@ html {
                 .lang-switch {
                     cursor: pointer;
                 }
+
+                .lang-switch:first-child {
+                    color: $gold;
+                }
+
             }
         }
     }

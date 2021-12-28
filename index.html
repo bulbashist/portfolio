@@ -13,19 +13,19 @@
         <button class="header__logo"></button>
         <ul class="header__list nav-list">
             <li class="nav-list__item">
-                <a href = "#skills-link">Skills</a>
+                <a href="#skills-link" id="skills">Skills</a>
             </li>
             <li class="nav-list__item">
-                <a href = "#portfolio-link">Portfolio</a>
+                <a href="#portfolio-link" id="portfolio">Portfolio</a>
             </li>
             <li class="nav-list__item">
-                <a href="#video-link">Video</a>
+                <a href="#video-link" id="video">Video</a>
             </li>
             <li class="nav-list__item">
-                <a href="#price-link">Price</a>
+                <a href="#price-link" id="price">Price</a>
             </li>
             <li class="nav-list__item">
-                <a href="#contacts-link">Contacts</a>
+                <a href="#contacts-link" id="contacts">Contacts</a>
             </li>
             <li class="nav-list__item">
                 <span class="lang-switch">en</span>
@@ -37,40 +37,45 @@
     <main>
         <section id="hero-link" class="hero">
             <article class="hero__info">
-                <h2 class="hero__name">Alexa Rise</h2>
-                <p class="hero__quote">Save sincere emotions, romantic feelings and happy moments of life together with
+                <h2 id="hero-title" class="hero__name">Alexa Rise</h2>
+                <p id="hero-text" class="hero__quote">Save sincere emotions, romantic feelings and happy moments of life
+                    together with
                     professional
                     photographer Alexa Rise
                 </p>
-                <button class="hero__hire">Hire me</button>
+                <button id="hire" class="hero__hire">Hire me</button>
             </article>
         </section>
-        <section id = "skills-link" class="skills">
+        <section id="skills-link" class="skills">
             <div class="section-header">
                 <hr class="section-header__line">
-                <p class="section-header__header">Skills</p>
+                <p id="skills" class="section-header__header">Skills</p>
                 <hr class="section-header__line">
             </div>
             <ul class="skill-list">
                 <li class="skill-list__item">
                     <img src="./assets/skills/camera.svg" alt="" class="skill-list__img">
-                    <h3 class="skill-list__header">Digital photography</h3>
-                    <p class="skill-list__description">High-quality photos in the studio and on the nature</p>
+                    <h3 id="skill-title-1" class="skill-list__header">Digital photography</h3>
+                    <p id="skill-text-1" class="skill-list__description">High-quality photos in the studio and on the
+                        nature</p>
                 </li>
                 <li class="skill-list__item">
                     <img src="./assets/skills/video.svg" alt="" class="skill-list__img">
-                    <h3 class="skill-list__header">Video shooting</h3>
-                    <p class="skill-list__description">Capture your moments so that they always stay with you</p>
+                    <h3 id="skill-title-2" class="skill-list__header">Video shooting</h3>
+                    <p id="skill-text-2" class="skill-list__description">Capture your moments so that they always stay
+                        with you</p>
                 </li>
                 <li class="skill-list__item">
                     <img src="./assets/skills/image.svg" alt="" class="skill-list__img">
-                    <h3 class="skill-list__header">Rotouch</h3>
-                    <p class="skill-list__description">I strive to make photography surpass reality</p>
+                    <h3 id="skill-title-3" class="skill-list__header">Rotouch</h3>
+                    <p id="skill-text-3" class="skill-list__description">I strive to make photography surpass reality
+                    </p>
                 </li>
                 <li class="skill-list__item">
                     <img src="./assets/skills/mic.svg" alt="" class="skill-list__img">
-                    <h3 class="skill-list__header">Audio</h3>
-                    <p class="skill-list__description">Professional sounds recording for video, advertising, portfolio
+                    <h3 id="skill-title-4" class="skill-list__header">Audio</h3>
+                    <p id="skill-text-4" class="skill-list__description">Professional sounds recording for video,
+                        advertising, portfolio
                     </p>
                 </li>
             </ul>
@@ -78,24 +83,24 @@
         <section id="portfolio-link" class="portfolio">
             <div class="section-header">
                 <hr class="section-header__line">
-                <p class="section-header__header">Portfolio</p>
+                <p id = "portfolio" class="section-header__header">Portfolio</p>
                 <hr class="section-header__line">
             </div>
-            <ul class = "portfolio-panel">
-                <li class = "portfolio-panel__item">
-                    <button class="portfolio-panel__btn">Winter</button>
+            <ul class="portfolio-panel">
+                <li class="portfolio-panel__item">
+                    <button id = "winter" class="portfolio-panel__btn">Winter</button>
                 </li>
-                <li class = "portfolio-panel__item">
-                    <button class="portfolio-panel__btn">Spring</button>
+                <li class="portfolio-panel__item">
+                    <button id ="spring" class="portfolio-panel__btn">Spring</button>
                 </li>
-                <li class = "portfolio-panel__item">
-                    <button class="portfolio-panel__btn">Summer</button>
+                <li class="portfolio-panel__item">
+                    <button id = "summer" class="portfolio-panel__btn">Summer</button>
                 </li>
-                <li class = "portfolio-panel__item">
-                    <button class="portfolio-panel__btn">Autumn</button>
+                <li class="portfolio-panel__item">
+                    <button id = "autumn" class="portfolio-panel__btn">Autumn</button>
                 </li>
             </ul>
-            <div class = "portfolio-photos">
+            <div class="portfolio-photos">
                 <img src="./assets/portfolio/autumn/1.jpg" alt="" class="portfolio-photos__img">
                 <img src="./assets/portfolio/autumn/2.jpg" alt="" class="portfolio-photos__img">
                 <img src="./assets/portfolio/autumn/3.jpg" alt="" class="portfolio-photos__img">
@@ -104,86 +109,86 @@
                 <img src="./assets/portfolio/autumn/6.jpg" alt="" class="portfolio-photos__img">
             </div>
         </section>
-        <section id = "video-link" class="video">
+        <section id="video-link" class="video">
             <div class="section-header">
                 <hr class="section-header__line">
-                <p class="section-header__header">Video</p>
+                <p id = "video" class="section-header__header">Video</p>
                 <hr class="section-header__line">
             </div>
             <div class="video-wrapper">
-                <img src="./assets/video/video-player.png" alt="" class = "video-wrapper__img">
-                <img src = "./assets/video/play-btn.svg" alt = "" class = "video-wrapper__play-btn">
+                <img src="./assets/video/video-player.png" alt="" class="video-wrapper__img">
+                <img src="./assets/video/play-btn.svg" alt="" class="video-wrapper__play-btn">
             </div>
         </section>
-        <section id = "price-link" class="price">
+        <section id="price-link" class="price">
             <div class="section-header">
                 <hr class="section-header__line">
-                <p class="section-header__header">Price</p>
+                <p id = "price" class="section-header__header">Price</p>
                 <hr class="section-header__line">
             </div>
-            <ul class = "price-list">
-                <li class = "price-list__item">
-                    <h3 class = price-list__header>Standart</h3>
-                    <h4 class = "price-list__price">500 $</h4>
-                    <ul class = "services-list">
-                        <li class="services-list__item">One location</li>
-                        <li class="services-list__item">120 photos in color</li>
-                        <li class="services-list__item">12 photos in retouch</li>
-                        <li class="services-list__item">Readiness 2-3 weeks</li>
-                        <li class="services-list__item">Make up, visage</li>
-                    </ul> 
-                    <button class = "price-list__submit">Order shooting</button>
+            <ul class="price-list">
+                <li class="price-list__item">
+                    <h3 class=price-list__header>Standart</h3>
+                    <h4 class="price-list__price">500 $</h4>
+                    <ul class="services-list">
+                        <li id = "price-descripton-1-span-1" class="services-list__item">One location</li>
+                        <li id = "price-descripton-1-span-2" class="services-list__item">120 photos in color</li>
+                        <li id = "price-descripton-1-span-3" class="services-list__item">12 photos in retouch</li>
+                        <li id = "price-descripton-1-span-4" class="services-list__item">Readiness 2-3 weeks</li>
+                        <li id = "price-descripton-1-span-5" class="services-list__item">Make up, visage</li>
+                    </ul>
+                    <button id = "order" class="price-list__submit">Order shooting</button>
                 </li>
-                <li class = "price-list__item">
-                    <h3 class = price-list__header>Premium</h3>
-                    <h4 class = "price-list__price">700 $</h4>
-                    <ul class = "services-list">
-                        <li class="services-list__item">One or two locations</li>
-                        <li class="services-list__item">200 photos in color</li>
-                        <li class="services-list__item">20 photos in retouch</li>
-                        <li class="services-list__item">Readiness 1-2 weeks</li>
-                        <li class="services-list__item">Make up, visage</li>
-                    </ul> 
-                    <button class = "price-list__submit">Order shooting</button>
+                <li class="price-list__item">
+                    <h3 class=price-list__header>Premium</h3>
+                    <h4 class="price-list__price">700 $</h4>
+                    <ul class="services-list">
+                        <li id = "price-descripton-2-span-1" class="services-list__item">One or two locations</li>
+                        <li id = "price-descripton-2-span-2" class="services-list__item">200 photos in color</li>
+                        <li id = "price-descripton-2-span-3" class="services-list__item">20 photos in retouch</li>
+                        <li id = "price-descripton-2-span-4" class="services-list__item">Readiness 1-2 weeks</li>
+                        <li id = "price-descripton-2-span-5" class="services-list__item">Make up, visage</li>
+                    </ul>
+                    <button id = "order" class="price-list__submit">Order shooting</button>
                 </li>
-                <li class = "price-list__item">
-                    <h3 class = price-list__header>Gold</h3>
-                    <h4 class = "price-list__price">1000 $</h4>
-                    <ul class = "services-list">
-                        <li class="services-list__item">Three locations or more</li>
-                        <li class="services-list__item">300 photos in color</li>
-                        <li class="services-list__item">50 photos in retouch</li>
-                        <li class="services-list__item">Readiness 1 week</li>
-                        <li class="services-list__item">Make up, visage, hairstyle</li>
-                    </ul> 
-                    <button class = "price-list__submit">Order shooting</button>
+                <li class="price-list__item">
+                    <h3 class=price-list__header>Gold</h3>
+                    <h4 class="price-list__price">1000 $</h4>
+                    <ul class="services-list">
+                        <li id = "price-descripton-3-span-1" class="services-list__item">Three locations or more</li>
+                        <li id = "price-descripton-3-span-2" class="services-list__item">300 photos in color</li>
+                        <li id = "price-descripton-3-span-3" class="services-list__item">50 photos in retouch</li>
+                        <li id = "price-descripton-3-span-4" class="services-list__item">Readiness 1 week</li>
+                        <li id = "price-descripton-3-span-5" class="services-list__item">Make up, visage, hairstyle</li>
+                    </ul>
+                    <button id = "order" class="price-list__submit">Order shooting</button>
                 </li>
             </ul>
         </section>
-        <section id = "contacts-link" class="contacts">
-            <form action = "./index.html" class = "contacts-form">
-                <p class = "contacts-form__header">Contact me</p>
-                <input type = "email" placeholder = "E-mail" class = "contacts-form__email">
-                <input type = "tel" placeholder = "Phone" class = "contacts-form__tel">
-                <textarea placeholder = "Message" class = "contacts-form__message"></textarea>
-                <button type = "submit" class = "contacts-form__button">Send message</button>
+        <section id="contacts-link" class="contacts">
+            <form action="./index.html" class="contacts-form">
+                <p id = "contact-me" class="contacts-form__header">Contact me</p>
+                <input type="email" placeholder="E-mail" class="contacts-form__email">
+                <input type="tel" placeholder="Phone" class="contacts-form__tel">
+                <textarea placeholder="Message" class="contacts-form__message"></textarea>
+                <button type="submit" id = "send-message" class="contacts-form__button">Send message</button>
             </form>
         </section>
     </main>
-    <footer id = "footer-link" class="footer">
-        <p class = "footer-github">
+    <footer id="footer-link" class="footer">
+        <p class="footer-github">
             <span class="footer-github__text">@</span>
             <span class="footer-github__text">2022</span>
             <span class="footer-github__text">
-                <a href = "https://github.com/bulbashist">Bulbashist</a>
+                <a href="https://github.com/bulbashist">Bulbashist</a>
             </span>
         </p>
-        <p class = "footer__rsschool">
-            <a href = "https://rs.school">Rolling Scopes School</a>
+        <p class="footer__rsschool">
+            <a href="https://rs.school">Rolling Scopes School</a>
         </p>
-        <ul class = "footer-links-list">
+        <ul class="footer-links-list">
             <li class="footer-links-list__item">
-                <a href = "https://instagram.com/bulbashist">
+                <a href="https://instagram.com/bulbashist">
                     <img src="./assets/footer/inst.svg" alt="">
                 </a>
             </li>
