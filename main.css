@@ -149,7 +149,7 @@
     height: 40px;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url(images/460c9ab98ff4b31ef0e2.svg);
+    background-image: url(images/d3bbcf44efac41e89e64.svg);
     background-color: black;
     cursor: pointer;
   }
@@ -221,14 +221,13 @@
   }
 
   .skills {
-    height: 770px;
-    padding: 0 20px;
+    padding: 0 20px 40px;
   }
   .skills .skill-list {
     display: grid;
-    grid: 1fr 1fr/1fr 1fr;
+    grid: 1fr 1fr/repeat(auto-fill, 320px);
+    justify-content: center;
     gap: 40px 29px;
-    padding: 0 30px;
     color: white;
   }
   .skills .skill-list .skill-list__item {
@@ -537,7 +536,7 @@
     height: 40px;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url(images/460c9ab98ff4b31ef0e2.svg);
+    background-image: url(images/d3bbcf44efac41e89e64.svg);
     background-color: black;
     cursor: pointer;
   }
