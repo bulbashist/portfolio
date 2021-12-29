@@ -1,6 +1,7 @@
 export default class Portfolio {
     constructor() {
         this.seasons = ['winter', 'spring', 'summer', 'autumn'];
+        this.addListeners();
     }
 };
 

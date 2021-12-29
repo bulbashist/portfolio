@@ -115,14 +115,13 @@ html {
 }
 
 .skills {
-    height: 770px;
-    padding: 0 20px;
+    padding: 0 20px 40px;
 
     .skill-list {
         display: grid;
-        grid: 1fr 1fr / 1fr 1fr;
+        grid: 1fr 1fr / repeat(auto-fill, 320px);
+        justify-content: center;
         gap: 40px 29px;
-        padding: 0 30px;
         color: white;
 
         .skill-list__item {
