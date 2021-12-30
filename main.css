@@ -225,8 +225,9 @@
   }
   .skills .skill-list {
     display: grid;
-    grid: 1fr 1fr/1fr 1fr;
+    grid: 1fr 1fr/repeat(auto-fit, 320px);
     justify-content: center;
+    justify-items: center;
     gap: 40px 29px;
     color: white;
   }
@@ -303,10 +304,10 @@
   }
   .portfolio .portfolio-photos .portfolio-photos__img {
     aspect-ratio: 45/56;
-    width: 100%;
   }
 
   .video {
+    height: 606px;
     padding: 0 20px;
   }
   .video .video-wrapper {
@@ -337,6 +338,7 @@
     justify-content: space-around;
     align-items: center;
     gap: 50px;
+    margin-bottom: 89px;
   }
   .price .price-list .price-list__item {
     display: flex;
@@ -524,6 +526,9 @@
 
   .portfolio .portfolio-panel {
     grid: 1fr 1fr 1fr 1fr/1fr;
+    width: 100%;
+  }
+  .portfolio .portfolio-photos .portfolio-photos__img {
     width: 100%;
   }
 
@@ -754,6 +759,7 @@
 
   .price {
     padding: 0 20px;
+    margin-bottom: 100px;
   }
   .price .price-list {
     display: flex;
