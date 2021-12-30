@@ -119,8 +119,9 @@ html {
 
     .skill-list {
         display: grid;
-        grid: 1fr 1fr / repeat(auto-fill, 320px);
+        grid: 1fr 1fr / repeat(auto-fit, 320px);
         justify-content: center;
+        justify-items: center;
         gap: 40px 29px;
         color: white;
 
@@ -151,7 +152,6 @@ html {
 }
 
 .portfolio {
-    height: 3870px;
     padding: 0 20px;
 
     .portfolio-panel {
@@ -215,7 +215,6 @@ html {
 }
 
 .price {
-    height: 1914px;
     padding: 0 20px;
 
     .price-list {
@@ -224,13 +223,14 @@ html {
         justify-content: space-around;
         align-items: center;
         gap: 50px;
+        margin-bottom: 89px;
 
         .price-list__item {
             display: flex;
             flex-direction: column;
             box-sizing: border-box;
-            height: 505px;
             aspect-ratio: 84 / 101;
+            width: 420px;
             border: 3px solid $gold;
             padding: 40px 0;
             color: white;

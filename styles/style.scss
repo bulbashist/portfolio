@@ -3,6 +3,7 @@
 @import "mixins";
 @import "section-header";
 @import "./style768.scss";
+@import "./style420.scss";
 
 @media screen and (min-width: 901px) {
     
@@ -215,8 +216,8 @@ html {
 }
 
 .price {
-    height: 845px;
     padding: 0 20px;
+    margin-bottom: 100px;
 
     .price-list {
         display: flex;
