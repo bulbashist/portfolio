@@ -225,7 +225,7 @@
   }
   .skills .skill-list {
     display: grid;
-    grid: 1fr 1fr/repeat(auto-fill, 320px);
+    grid: 1fr 1fr/1fr 1fr;
     justify-content: center;
     gap: 40px 29px;
     color: white;
@@ -252,7 +252,6 @@
   }
 
   .portfolio {
-    height: 3870px;
     padding: 0 20px;
   }
   .portfolio .portfolio-panel {
@@ -304,10 +303,10 @@
   }
   .portfolio .portfolio-photos .portfolio-photos__img {
     aspect-ratio: 45/56;
+    width: 100%;
   }
 
   .video {
-    height: 606px;
     padding: 0 20px;
   }
   .video .video-wrapper {
@@ -330,7 +329,6 @@
   }
 
   .price {
-    height: 1914px;
     padding: 0 20px;
   }
   .price .price-list {
@@ -344,8 +342,8 @@
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    height: 505px;
     aspect-ratio: 84/101;
+    width: 420px;
     border: 3px solid #bdae82;
     padding: 40px 0;
     color: white;
@@ -498,6 +496,44 @@
   }
   .footer .footer-links-list .footer-links-list__item {
     list-style-type: none;
+  }
+}
+@media screen and (max-width: 540px) {
+  .hero .hero__info {
+    width: 100%;
+    padding: 0;
+  }
+  .hero .hero__info .hero__name {
+    text-align: center;
+  }
+  .hero .hero__info .hero__quote {
+    width: 100%;
+    text-align: center;
+  }
+  .hero .hero__info .hero__hire {
+    position: relative;
+    left: calc(50% - 110px);
+  }
+
+  .skills .skill-list {
+    grid: 1fr 1fr 1fr 1fr/1fr;
+  }
+  .skills .skill-list .skill-list__item {
+    width: 100%;
+  }
+
+  .portfolio .portfolio-panel {
+    grid: 1fr 1fr 1fr 1fr/1fr;
+    width: 100%;
+  }
+
+  .price .price-list .price-list__item {
+    width: 100%;
+  }
+
+  .contacts .contacts-form {
+    left: 0;
+    width: 100%;
   }
 }
 @media screen and (min-width: 901px) {
@@ -717,7 +753,6 @@
   }
 
   .price {
-    height: 845px;
     padding: 0 20px;
   }
   .price .price-list {
