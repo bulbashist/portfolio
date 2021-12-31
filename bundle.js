@@ -48,7 +48,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ BurgerMenu)\n/* harmony export */ });\nclass BurgerMenu {\r\n    constructor() {\r\n        const elem = document.querySelector('.burger-menu-btn');\r\n        const parent = document.querySelector('.header');\r\n        \r\n        const items = `\r\n            <ul class = \"burger-menu-list\">\r\n                <li class = \"burger-menu-list__item\">\r\n                    <a href=\"#skills-link\" id=\"skills\">Skills</a>\r\n                </li>\r\n                <li class = \"burger-menu-list__item\">\r\n                    <a href=\"#portfolio-link\" id=\"portfolio\">Portfolio</a>\r\n                </li>\r\n                <li class = \"burger-menu-list__item\">\r\n                    <a href=\"#video-link\" id=\"video\">Video</a>\r\n                </li>\r\n                <li class = \"burger-menu-list__item\">\r\n                    <a href=\"#price-link\" id=\"price\">Price</a>\r\n                </li>\r\n                <li class = \"burger-menu-list__item\">\r\n                    <a href=\"#contacts-link\" id=\"contacts\">Contacts</a>\r\n                </li>\r\n            </ul>\r\n        `;\r\n\r\n        const menu = document.createElement('div');\r\n        menu.classList.add('burger-menu');\r\n        menu.innerHTML = items;\r\n        parent.appendChild(menu);\r\n\r\n        elem.addEventListener('click', () => menu.classList.toggle('burger-menu_opened'));\r\n    }\r\n};\r\n\r\nBurgerMenu.prototype.changeState = function() {\r\n\r\n};\r\n\n\n//# sourceURL=webpack://portfolio/./src/burger-menu.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ BurgerMenu)\n/* harmony export */ });\n/* harmony import */ var _assets_header_burger_visited_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../assets/header/burger-visited.svg */ \"./assets/header/burger-visited.svg\");\n/* harmony import */ var _assets_header_burger_unvisited_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../assets/header/burger-unvisited.svg */ \"./assets/header/burger-unvisited.svg\");\n\r\n\r\n\r\n\r\nclass BurgerMenu {\r\n    constructor() {\r\n        const btn = document.querySelector('.burger-menu-btn');\r\n        const parent = document.querySelector('.header');\r\n        \r\n        const items = `\r\n            <ul class = \"burger-menu-list\">\r\n                <li class = \"burger-menu-list__item\">\r\n                    <a href=\"#skills-link\" id=\"skills\">Skills</a>\r\n                </li>\r\n                <li class = \"burger-menu-list__item\">\r\n                    <a href=\"#portfolio-link\" id=\"portfolio\">Portfolio</a>\r\n                </li>\r\n                <li class = \"burger-menu-list__item\">\r\n                    <a href=\"#video-link\" id=\"video\">Video</a>\r\n                </li>\r\n                <li class = \"burger-menu-list__item\">\r\n                    <a href=\"#price-link\" id=\"price\">Price</a>\r\n                </li>\r\n                <li class = \"burger-menu-list__item\">\r\n                    <a href=\"#contacts-link\" id=\"contacts\">Contacts</a>\r\n                </li>\r\n            </ul>\r\n        `;\r\n\r\n        const menu = document.createElement('div');\r\n        menu.classList.add('burger-menu');\r\n        menu.innerHTML = items;\r\n        parent.appendChild(menu);\r\n\r\n        btn.addEventListener('click', () => {\r\n            this.changeState(menu, btn);\r\n        });\r\n    }\r\n};\r\n\r\nBurgerMenu.prototype.changeState = function(menu, btn) {\r\n    menu.classList.toggle('burger-menu_opened');\r\n    btn.style.backgroundImage = menu.classList.contains('burger-menu_opened') ? `url(${_assets_header_burger_visited_svg__WEBPACK_IMPORTED_MODULE_0__})` : `url(${_assets_header_burger_unvisited_svg__WEBPACK_IMPORTED_MODULE_1__})`;\r\n};\r\n\n\n//# sourceURL=webpack://portfolio/./src/burger-menu.js?");
 
 /***/ }),
 
@@ -82,6 +82,28 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Translator)\n/* harmony export */ });\n/* harmony import */ var _translation_data__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./translation-data */ \"./src/translation-data.js\");\n\r\n\r\nclass Translator {\r\n    constructor () {\r\n        this.elems = [];\r\n        this.currLang = 'en';\r\n\r\n        const keys = Object.keys(_translation_data__WEBPACK_IMPORTED_MODULE_0__[\"default\"].en);\r\n        keys.forEach((key) => {\r\n            const elems = document.querySelectorAll(`#${key}`);\r\n            elems.forEach((elem) => this.elems.push(elem));\r\n        });\r\n        \r\n        const btns = document.querySelectorAll('.lang-switch');\r\n        btns.forEach((btn) => {\r\n            btn.addEventListener('click', () => {\r\n                btns.forEach((btn) => btn.style.color = 'white');\r\n                btn.style.color = '#bdae82';\r\n                this.changeLang(btn.textContent);\r\n            });\r\n        });\r\n    }\r\n};\r\n\r\nTranslator.prototype.changeLang = function(lang) {\r\n    this.currLang = lang;\r\n    this.setText();\r\n};\r\n\r\nTranslator.prototype.setText = function() {\r\n    this.elems.forEach((elem) => {\r\n        elem.textContent = _translation_data__WEBPACK_IMPORTED_MODULE_0__[\"default\"][this.currLang][elem.id];\r\n    });  \r\n};\n\n//# sourceURL=webpack://portfolio/./src/translator.js?");
+
+/***/ }),
+
+/***/ "./assets/header/burger-unvisited.svg":
+/*!********************************************!*\
+  !*** ./assets/header/burger-unvisited.svg ***!
+  \********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"images/d8d82099e0bcf42182ed.svg\";\n\n//# sourceURL=webpack://portfolio/./assets/header/burger-unvisited.svg?");
+
+/***/ }),
+
+/***/ "./assets/header/burger-visited.svg":
+/*!******************************************!*\
+  !*** ./assets/header/burger-visited.svg ***!
+  \******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"images/add85f3642930a250dd7.svg\";\n\n//# sourceURL=webpack://portfolio/./assets/header/burger-visited.svg?");
 
 /***/ }),
 
