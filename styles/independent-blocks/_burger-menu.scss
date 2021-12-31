@@ -1,5 +1,4 @@
 @media screen and (min-width: 901px) {
-    
     .burger-menu-btn {
         display: none;
     }
@@ -7,11 +6,9 @@
     .burger-menu {
         display: none;
     }
-
 }
 
 @media screen and (max-width: 900px) {
-    
     .burger-menu-btn {
         position: relative;
         z-index: 10;
@@ -36,7 +33,6 @@
             margin: 134px 0 0 127px;
             list-style-type: none;
         }
-
     }
 
     .burger-menu_opened {
@@ -44,9 +40,8 @@
         top: 0;
         right: 0;
         background-color: black;
-        transition: right 2s
+        transition: right 2s;
     }
-
 }
 
 @media screen and (max-width: 620px) {
@@ -56,6 +51,5 @@
         .burger-menu-list {
             margin-left: 20%;
         }
-
     }
 }

@@ -1,15 +1,13 @@
 @media screen and (max-width: 540px) {
-
     .hero {
-
         .hero__info {
-            width: 100%; 
+            width: 100%;
             padding: 0;
-            
+
             .hero__name {
                 text-align: center;
             }
-            
+
             .hero__quote {
                 width: 100%;
                 text-align: center;
@@ -19,13 +17,10 @@
                 position: relative;
                 left: calc(50% - 110px);
             }
-
         }
-
     }
 
     .skills {
-        
         .skill-list {
             grid: 1fr 1fr 1fr 1fr / 1fr;
 
@@ -36,14 +31,12 @@
     }
 
     .portfolio {
-
         .portfolio-panel {
             grid: 1fr 1fr 1fr 1fr / 1fr;
             width: 100%;
         }
 
         .portfolio-photos {
-
             .portfolio-photos__img {
                 width: 100%;
             }
@@ -51,9 +44,7 @@
     }
 
     .price {
-        
         .price-list {
-            
             .price-list__item {
                 width: 100%;
             }
@@ -61,7 +52,6 @@
     }
 
     .contacts {
-    
         .contacts-form {
             left: 0;
             width: 100%;

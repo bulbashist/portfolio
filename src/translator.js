@@ -14,7 +14,6 @@ export default class Translator {
         const btns = document.querySelectorAll('.lang-switch');
         btns.forEach((btn) => {
             btn.addEventListener('click', () => {
-                console.log(btns, btn);
                 btns.forEach((btn) => btn.style.color = 'white');
                 btn.style.color = '#bdae82';
                 this.changeLang(btn.textContent);

@@ -11,28 +11,30 @@
 <body class="page">
     <header class="header">
         <button class="header__logo"></button>
-        <button class="burger-menu-btn"></button>
-        <ul class="header__list nav-list">
-            <li class="nav-list__item">
-                <a href="#skills-link" id="skills">Skills</a>
-            </li>
-            <li class="nav-list__item">
-                <a href="#portfolio-link" id="portfolio">Portfolio</a>
-            </li>
-            <li class="nav-list__item">
-                <a href="#video-link" id="video">Video</a>
-            </li>
-            <li class="nav-list__item">
-                <a href="#price-link" id="price">Price</a>
-            </li>
-            <li class="nav-list__item">
-                <a href="#contacts-link" id="contacts">Contacts</a>
-            </li>
-            <li class="nav-list__item">
+        <ul class="header__list">
+            <nav class="nav-list">
+                <li class="nav-list__item">
+                    <a href="#skills-link" id="skills">Skills</a>
+                </li>
+                <li class="nav-list__item">
+                    <a href="#portfolio-link" id="portfolio">Portfolio</a>
+                </li>
+                <li class="nav-list__item">
+                    <a href="#video-link" id="video">Video</a>
+                </li>
+                <li class="nav-list__item">
+                    <a href="#price-link" id="price">Price</a>
+                </li>
+                <li class="nav-list__item">
+                    <a href="#contacts-link" id="contacts">Contacts</a>
+                </li>
+            </nav>
+            <div class="lang-lang">
                 <span class="lang-switch">en</span>
                 <span>/</span>
                 <span class="lang-switch">ru</span>
-            </li>
+            </div>
+            <button class="burger-menu-btn"></button>
         </ul>
     </header>
     <main>
@@ -84,21 +86,21 @@
         <section id="portfolio-link" class="portfolio">
             <div class="section-header">
                 <hr class="section-header__line">
-                <p id = "portfolio" class="section-header__header">Portfolio</p>
+                <p id="portfolio" class="section-header__header">Portfolio</p>
                 <hr class="section-header__line">
             </div>
             <ul class="portfolio-panel">
                 <li class="portfolio-panel__item">
-                    <button id = "winter" class="portfolio-panel__btn">Winter</button>
+                    <button id="winter" class="portfolio-panel__btn">Winter</button>
                 </li>
                 <li class="portfolio-panel__item">
-                    <button id ="spring" class="portfolio-panel__btn">Spring</button>
+                    <button id="spring" class="portfolio-panel__btn">Spring</button>
                 </li>
                 <li class="portfolio-panel__item">
-                    <button id = "summer" class="portfolio-panel__btn">Summer</button>
+                    <button id="summer" class="portfolio-panel__btn">Summer</button>
                 </li>
                 <li class="portfolio-panel__item">
-                    <button id = "autumn" class="portfolio-panel__btn">Autumn</button>
+                    <button id="autumn" class="portfolio-panel__btn">Autumn</button>
                 </li>
             </ul>
             <div class="portfolio-photos">
@@ -113,7 +115,7 @@
         <section id="video-link" class="video">
             <div class="section-header">
                 <hr class="section-header__line">
-                <p id = "video" class="section-header__header">Video</p>
+                <p id="video" class="section-header__header">Video</p>
                 <hr class="section-header__line">
             </div>
             <div class="video-wrapper">
@@ -124,7 +126,7 @@
         <section id="price-link" class="price">
             <div class="section-header">
                 <hr class="section-header__line">
-                <p id = "price" class="section-header__header">Price</p>
+                <p id="price" class="section-header__header">Price</p>
                 <hr class="section-header__line">
             </div>
             <ul class="price-list">
@@ -132,47 +134,47 @@
                     <h3 class=price-list__header>Standart</h3>
                     <h4 class="price-list__price">500 $</h4>
                     <ul class="services-list">
-                        <li id = "price-descripton-1-span-1" class="services-list__item">One location</li>
-                        <li id = "price-descripton-1-span-2" class="services-list__item">120 photos in color</li>
-                        <li id = "price-descripton-1-span-3" class="services-list__item">12 photos in retouch</li>
-                        <li id = "price-descripton-1-span-4" class="services-list__item">Readiness 2-3 weeks</li>
-                        <li id = "price-descripton-1-span-5" class="services-list__item">Make up, visage</li>
+                        <li id="price-descripton-1-span-1" class="services-list__item">One location</li>
+                        <li id="price-descripton-1-span-2" class="services-list__item">120 photos in color</li>
+                        <li id="price-descripton-1-span-3" class="services-list__item">12 photos in retouch</li>
+                        <li id="price-descripton-1-span-4" class="services-list__item">Readiness 2-3 weeks</li>
+                        <li id="price-descripton-1-span-5" class="services-list__item">Make up, visage</li>
                     </ul>
-                    <button id = "order" class="price-list__submit">Order shooting</button>
+                    <button id="order" class="price-list__submit">Order shooting</button>
                 </li>
                 <li class="price-list__item">
                     <h3 class=price-list__header>Premium</h3>
                     <h4 class="price-list__price">700 $</h4>
                     <ul class="services-list">
-                        <li id = "price-descripton-2-span-1" class="services-list__item">One or two locations</li>
-                        <li id = "price-descripton-2-span-2" class="services-list__item">200 photos in color</li>
-                        <li id = "price-descripton-2-span-3" class="services-list__item">20 photos in retouch</li>
-                        <li id = "price-descripton-2-span-4" class="services-list__item">Readiness 1-2 weeks</li>
-                        <li id = "price-descripton-2-span-5" class="services-list__item">Make up, visage</li>
+                        <li id="price-descripton-2-span-1" class="services-list__item">One or two locations</li>
+                        <li id="price-descripton-2-span-2" class="services-list__item">200 photos in color</li>
+                        <li id="price-descripton-2-span-3" class="services-list__item">20 photos in retouch</li>
+                        <li id="price-descripton-2-span-4" class="services-list__item">Readiness 1-2 weeks</li>
+                        <li id="price-descripton-2-span-5" class="services-list__item">Make up, visage</li>
                     </ul>
-                    <button id = "order" class="price-list__submit">Order shooting</button>
+                    <button id="order" class="price-list__submit">Order shooting</button>
                 </li>
                 <li class="price-list__item">
                     <h3 class=price-list__header>Gold</h3>
                     <h4 class="price-list__price">1000 $</h4>
                     <ul class="services-list">
-                        <li id = "price-descripton-3-span-1" class="services-list__item">Three locations or more</li>
-                        <li id = "price-descripton-3-span-2" class="services-list__item">300 photos in color</li>
-                        <li id = "price-descripton-3-span-3" class="services-list__item">50 photos in retouch</li>
-                        <li id = "price-descripton-3-span-4" class="services-list__item">Readiness 1 week</li>
-                        <li id = "price-descripton-3-span-5" class="services-list__item">Make up, visage, hairstyle</li>
+                        <li id="price-descripton-3-span-1" class="services-list__item">Three locations or more</li>
+                        <li id="price-descripton-3-span-2" class="services-list__item">300 photos in color</li>
+                        <li id="price-descripton-3-span-3" class="services-list__item">50 photos in retouch</li>
+                        <li id="price-descripton-3-span-4" class="services-list__item">Readiness 1 week</li>
+                        <li id="price-descripton-3-span-5" class="services-list__item">Make up, visage, hairstyle</li>
                     </ul>
-                    <button id = "order" class="price-list__submit">Order shooting</button>
+                    <button id="order" class="price-list__submit">Order shooting</button>
                 </li>
             </ul>
         </section>
         <section id="contacts-link" class="contacts">
             <form action="./index.html" class="contacts-form">
-                <p id = "contact-me" class="contacts-form__header">Contact me</p>
+                <p id="contact-me" class="contacts-form__header">Contact me</p>
                 <input type="email" placeholder="E-mail" class="contacts-form__email">
                 <input type="tel" placeholder="Phone" class="contacts-form__tel">
                 <textarea placeholder="Message" class="contacts-form__message"></textarea>
-                <button type="submit" id = "send-message" class="contacts-form__button">Send message</button>
+                <button type="submit" id="send-message" class="contacts-form__button">Send message</button>
             </form>
         </section>
     </main>
