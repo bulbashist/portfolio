@@ -29,6 +29,7 @@ export default class BurgerMenu {
 
         const menu = document.createElement('div');
         menu.classList.add('burger-menu');
+        menu.addEventListener('click', () => this.changeState(menu, btn));
         menu.innerHTML = items;
         parent.appendChild(menu);
 
