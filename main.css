@@ -179,7 +179,6 @@
 
   html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
   }
 
   .page {
@@ -187,6 +186,7 @@
     margin: 0 auto;
     box-sizing: border-box;
     background-color: black;
+    overflow-x: hidden;
   }
 
   .header {
