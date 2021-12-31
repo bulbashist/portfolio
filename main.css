@@ -74,7 +74,7 @@
     height: 50px;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url(images/d8d82099e0bcf42182ed.svg);
+    background-image: url(images/5bbe000fdc77d5e18697.svg);
     background-color: rgba(0, 0, 0, 0);
     cursor: pointer;
   }
@@ -179,6 +179,7 @@
 
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
 
   .page {
