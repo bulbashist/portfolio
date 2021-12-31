@@ -17,6 +17,7 @@
 
 html {
     scroll-behavior: smooth;
+    //overflow-x: hidden;
 }
 
 .page {
@@ -27,6 +28,7 @@ html {
 }
 
 .header {
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -48,7 +50,7 @@ html {
     }
 
     .nav-list {
-        display: flex;
+        display: none;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;

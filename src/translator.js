@@ -1,4 +1,4 @@
-import i18Obj from "./translationData";
+import i18Obj from "./translation-data";
 
 export default class Translator {
     constructor () {
