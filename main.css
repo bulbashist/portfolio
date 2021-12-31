@@ -187,6 +187,7 @@
     margin: 0 auto;
     box-sizing: border-box;
     background-color: black;
+    overflow-x: hidden;
   }
 
   .header {
@@ -200,7 +201,6 @@
     background-image: url(images/6d0d3966db763c3b72b2.png);
     background-position: center 0;
     background-repeat: no-repeat;
-    overflow-x: hidden;
   }
   .header .header__logo {
     width: 50px;
