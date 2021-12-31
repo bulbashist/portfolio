@@ -92,7 +92,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-eval("module.exports = __webpack_require__.p + \"images/d8d82099e0bcf42182ed.svg\";\n\n//# sourceURL=webpack://portfolio/./assets/header/burger-unvisited.svg?");
+eval("module.exports = __webpack_require__.p + \"images/5bbe000fdc77d5e18697.svg\";\n\n//# sourceURL=webpack://portfolio/./assets/header/burger-unvisited.svg?");
 
 /***/ }),
 
@@ -103,7 +103,7 @@ eval("module.exports = __webpack_require__.p + \"images/d8d82099e0bcf42182ed.svg
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-eval("module.exports = __webpack_require__.p + \"images/add85f3642930a250dd7.svg\";\n\n//# sourceURL=webpack://portfolio/./assets/header/burger-visited.svg?");
+eval("module.exports = __webpack_require__.p + \"images/0a0c20f90104deb513c8.svg\";\n\n//# sourceURL=webpack://portfolio/./assets/header/burger-visited.svg?");
 
 /***/ }),
 
