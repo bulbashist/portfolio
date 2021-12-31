@@ -1,6 +1,10 @@
+import Image1 from '../assets/header/burger-visited.svg';
+import Image2 from '../assets/header/burger-unvisited.svg';
+
+
 export default class BurgerMenu {
     constructor() {
-        const elem = document.querySelector('.burger-menu-btn');
+        const btn = document.querySelector('.burger-menu-btn');
         const parent = document.querySelector('.header');
         
         const items = `
@@ -28,10 +32,13 @@ export default class BurgerMenu {
         menu.innerHTML = items;
         parent.appendChild(menu);
 
-        elem.addEventListener('click', () => menu.classList.toggle('burger-menu_opened'));
+        btn.addEventListener('click', () => {
+            this.changeState(menu, btn);
+        });
     }
 };
 
-BurgerMenu.prototype.changeState = function() {
-
+BurgerMenu.prototype.changeState = function(menu, btn) {
+    menu.classList.toggle('burger-menu_opened');
+    btn.style.backgroundImage = menu.classList.contains('burger-menu_opened') ? `url(${Image1})` : `url(${Image2})`;
 };
